@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.RESTJerseyExample.test.CreateStudentTest">
+        <methods>
+          <include name="insertStudentZero"/>
+          <include name="insertStudentIsSapce"/>
+          <include name="insertStudentIsInteger"/>
+          <include name="insertStudentHappyPath"/>
+          <include name="insertStudentInCorretPath"/>
+          <include name="insertStudentIsNull"/>
+          <include name="insertStudentIsSame"/>
+        </methods>
+      </class> <!-- com.RESTJerseyExample.test.CreateStudentTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
