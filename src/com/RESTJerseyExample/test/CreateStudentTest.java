@@ -25,16 +25,7 @@ public class CreateStudentTest {
 		Assert.assertEquals(httpResponse.getStatusLine().getStatusCode(), HttpStatus.SC_OK);
 	}
 
-	@Test
-	public void testRestAssured()
-	{
-		Response response = RestAssured.given().get("http://localhost:8007/RESTJerseyExample/student/1243");
-		Assert.assertEquals(response.getContentType(), "application/json");
-		Assert.assertEquals(response.getStatusCode(), HttpStatus.SC_OK);
-		int studentId = JsonPath.from(response.asString()).getInt("id");
-		Assert.assertEquals(studentId, 1243);
-	}
-
+	
 	@Test
 	public void insertStudentInCorretPath() throws ClientProtocolException, IOException{
 		HttpUriRequest request=new HttpPut("http://localhost:8007/RESTJerseyExample/student/includ");

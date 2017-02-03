@@ -32,16 +32,7 @@ public class GetStudentTest {
 		Assert.assertEquals(actualResponseCode, 200);
 	}
 	
-	@Test
-	public void testRestAssured()
-	{
-		Response response = RestAssured.given().get("http://localhost:8007/RESTJerseyExample/student/1243");
-		Assert.assertEquals(response.getContentType(), "application/json");
-		Assert.assertEquals(response.getStatusCode(), HttpStatus.SC_OK);
-		int studentId = JsonPath.from(response.asString()).getInt("id");
-		Assert.assertEquals(studentId, 1243);
-	}
-
+	
 
 	@Test
 	public void testNegativeTestCaseGetStudent() throws ClientProtocolException, IOException{

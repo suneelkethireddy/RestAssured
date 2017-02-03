@@ -19,10 +19,15 @@
 			<param-name>com.sun.jersey.config.property.packages</param-name>
 			<param-value>com.RESTJerseyExample.service</param-value>
 		</init-param>
+		<init-param>
+			<param-name>com.sun.jersey.config.property.WebPageContentRegex</param-name>
+			<param-value>/(images|css|jsp)/.*</param-value>
+		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Jersey Web Application</servlet-name>
 		<url-pattern>/*</url-pattern>
+
 	</servlet-mapping>
 </web-app>

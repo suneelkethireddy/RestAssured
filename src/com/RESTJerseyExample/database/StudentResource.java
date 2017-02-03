@@ -100,7 +100,7 @@ public class StudentResource {
 	 * @return Student Object
 	 * @throws SQLException 
 	 */
-	public  Student  getStudent(int studentId)throws Exception
+	public static   Student  getStudent(int studentId)throws Exception
 	{
 		try {
 			conn= getDBConnection();

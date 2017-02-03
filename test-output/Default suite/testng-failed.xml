@@ -3,17 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.RESTJerseyExample.test.CreateStudentTest">
+      <class name="com.RESTJerseyExample.RestAssured.CreateStudentRestAssured">
         <methods>
-          <include name="insertStudentZero"/>
-          <include name="insertStudentIsSapce"/>
-          <include name="insertStudentIsInteger"/>
-          <include name="insertStudentHappyPath"/>
-          <include name="insertStudentInCorretPath"/>
-          <include name="insertStudentIsNull"/>
-          <include name="insertStudentIsSame"/>
+          <include name="createStudentRecordHappyPath"/>
         </methods>
-      </class> <!-- com.RESTJerseyExample.test.CreateStudentTest -->
+      </class> <!-- com.RESTJerseyExample.RestAssured.CreateStudentRestAssured -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
